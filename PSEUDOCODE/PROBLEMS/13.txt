@@ -1,0 +1,22 @@
+13. Se citeste un numar intreg pozitiv. Sa se afiseze toate numerele pozitive(inclusiv 0),
+strict mai mici valoarea citita, in ordine descrescatoare
+Exemple:
+Se citeste 5. Se afiseaza 4 3 2 1 0
+
+READ n
+i = n - 1
+
+WHILE i >= 0
+   WRITE i
+   i = i - 1
+ENDWHILE
+
+Javascript
+---------------
+function printFromNminus1To0(n) {
+   var i = n - 1;
+   while(i >= 0) {
+      console.log(i);
+      i = i - 1;
+   }
+}

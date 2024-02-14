@@ -1,0 +1,13 @@
+7. Se citeste o distanta in mile. Sa se afiseze valoarea in kilometri(1 mila = 1.60934 km)
+Exemplu
+se citeste 10, se afiseaza “10 mile = 16.0934 km”
+se citeste -10, se afiseaza “Distanta invalida”
+
+READ distantaInMile
+
+IF distantaInMile < 0
+   WRITE "Distanta invalida"
+ELSE
+   distantaInKm = distantaInMile * 16.0934
+   WRITE "Distanta in km:"  distantaInKm
+ENDIF

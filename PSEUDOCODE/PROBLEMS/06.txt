@@ -1,0 +1,15 @@
+6. Se citesc doua numere. Sa de afiseze valoarea minima si maxima.
+Exemple:
+se citesc 4 si 2, se afiseaza “Valoarea minima: 2” si “Valoarea maxima: 4”
+se citesc -6 si 2, se afiseaza “Valoarea minima: -6” si “Valoarea maxima 2”
+
+READ a
+READ b
+
+IF a < b THEN
+   WRITE "valoarea minima" a
+   WRITE "valoarea maxima" b
+ELSE
+   WRITE "valoarea minima" b
+   WRITE "valoarea maxima" a
+ENDIF

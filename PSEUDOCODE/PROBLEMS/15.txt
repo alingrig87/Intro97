@@ -1,0 +1,30 @@
+15. Se citesc 2 valori in ordine crescatoare. Sa se afiseze toate numerele care sunt mai mari
+sau egale cu primul numar si mai mici sau egale cu al doilea numar.
+Exemple:
+Se citeste -2 si 4. Se afiseaza -2 -1 0 1 2 3 4
+Se citeste 3 si 4. Se afiseaza 3 4
+Se citeste 4 si 4. Se afiseaza 4
+
+
+READ start
+READ end
+
+i = start
+
+WHILE i >= end
+   WRITE i
+   i = i + 1
+ENDWHILE
+
+Javascript
+---------------
+function printFromNToM(start, end) {
+   var i = start;
+
+   while(i <= end) {
+      console.log(i);
+      i = i + 1;
+   }
+}
+
+printFromNToM(2, 8);

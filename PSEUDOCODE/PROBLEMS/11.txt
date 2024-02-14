@@ -1,0 +1,35 @@
+11. Se citesc parametrii unei ecuatii de gradul 2( ax
+2 + bx + c = 0). Sa se afiseze solutia x.
+Informatii aici: https://www.mathsisfun.com/quadratic-equation-solver.html
+Exemple:
+Se citeste a: 2, b: 1, c: 2. Se afiseaza “Ecuatia nu are solutii reale”
+Se citeste a: 2, b: 4, c: 2. Se afiseaza “Solutie: X=-1”
+Se citeste a: 1, b: 1, c: -6. Se afiseaza “Solutii: X1=-3, X2=2”
+Se citeste a: 0, b: 0, c:0. Se afiseaza “Solutie: Multimea Reala”
+
+READ a
+READ b
+READ c
+
+delta = b*b - 4*a*c
+
+IF a == 0 AND b == 0 AND c == 0 THEN
+   WRITE "Solutie: Multimea Reale"
+   RETURN
+ENDIF
+
+IF delta < 0 THEN
+   WRITE "Ecuatia nu are solutii"
+   RETURN
+ENDIF
+
+IF delta == 0 THEN
+   x = -b/(2*a)
+   WRITE "Unica solutie:" x
+ENDIF
+
+IF delta > 0 THEN
+   x1 = (-b + sqrt(delta)) / (2*a)
+   x2 = (-b - sqrt(delta)) / (2*a)
+   WRITE "Solutiile sunt:" x1, x2
+ENDIF

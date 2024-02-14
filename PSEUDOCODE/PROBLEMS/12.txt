@@ -1,0 +1,26 @@
+12. Se citeste un numar intreg pozitiv. Sa se afiseze toate numerele pozitive nenule mai mici
+sau egale decat valoarea citita, in ordine crescatoare
+Exemple:
+Se citeste 5. Se afiseaza 1 2 3 4 5
+
+READ n
+i = 1
+
+WHILE i <= n
+   WRITE i
+   i = i + 1
+ENDWHILE
+
+Javascript
+---------------
+function printFrom1ToN(n) {
+   var i = 1;
+   while(i <= n) {
+      console.log(i);
+      i = i + 1;
+   }
+}
+
+printFrom1ToN(2);
+printFrom1ToN(8);
+printFrom1ToN(10);

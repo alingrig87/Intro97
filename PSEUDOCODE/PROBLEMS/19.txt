@@ -1,0 +1,44 @@
+19. Se citeste un numar pozitiv nenul N. Sa se afiseze N de elemente din sirul lui Fibonnacci
+ca. Nu utilizati siruri!
+https://en.wikipedia.org/wiki/Fibonacci_number
+Exemple:
+Se citeste 8. Se afiseaza 0 1 1 2 3 5 8 13
+Se citeste 1. Se afiseaza 0
+Se citeste 4. Se afiseaza 0 1 1 2
+
+READ n
+
+a = 0
+b = 1
+
+i = 3
+
+WRITE a
+
+WHILE  i <= n
+   tmp = a + b
+   a = b
+   b = tmp
+   WRITE a
+   i = i + 1
+ENDWHILE
+
+----Javascript------
+function fiboNoArray(n) {
+  var a = 0;
+  var b = 1;
+  
+  var i = 2;
+  
+  console.log(a);
+  console.log(b);
+  
+  while (i <= n) {
+    var tmp = a + b;
+    a = b;
+    b = tmp;
+    i = i + 1;
+    console.log(b);
+  }
+}
+fiboNoArray(8);

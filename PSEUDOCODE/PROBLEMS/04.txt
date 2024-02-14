@@ -1,0 +1,11 @@
+4. Se citesc doua numere. Sa se interschimbe valorile in cele 2 variabile.
+Exemple:
+se citesc 3 si 2, se afiseaza 2 3
+se citesc -3 si 2, se afiseaza 2 -3
+
+READ a
+READ b
+
+tmp = a
+a = b
+b = tmp

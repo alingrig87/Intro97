@@ -1,0 +1,38 @@
+22. Se citeste un numar. Sa se afiseze daca numarul este prim sau nu.
+Exemple:
+Se citeste 1. Se fiseaza “Numarul este prim”
+Se citeste 2. Se afiseaza “Numarul este prim”
+Se citeste 16. Se afiseaza “Numarul nu este prim”
+
+READ n
+i = 2
+
+WHILE i <= n - 1
+   IF n%i == 0 THEN
+      WRITE "Numarul nu este prim"
+      RETURN
+   ENDIF
+   i = i + 1
+ENDWHILE
+
+WRITE "Numarul este prim"
+
+---Javascript-----
+function estePrim(n) {
+  var i = 2;
+  
+  while (i <= n - 1) {
+     if (n%i == 0) {
+        console.log("Numarul nu este prim");
+        return;
+     }
+     i = i + 1;
+  }
+
+  console.log("Numarul este prim");
+}
+
+estePrim(12);
+estePrim(5);
+estePrim(4);
+estePrim(17);

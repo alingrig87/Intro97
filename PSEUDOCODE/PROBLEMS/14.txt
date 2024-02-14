@@ -1,0 +1,39 @@
+14. Se citesc 2 valori in ordine crescatoare. Sa se afiseze toate numerele dintre cele 2 valori
+citite. Daca nu exista valori, de afisat, se afiseaza un mesaj de notificare.
+Exemple:
+Se citeste -2 si 4. Se afiseaza -1 0 1 2 3
+Se citeste 3 si 4. Se afiseaza mesajul “Nu exista nici o valoare de afisat”
+Se citeste 4 si 4. Se afiseaza mesajul “Nu exista nici o valoare de afisat”
+
+READ start
+READ end
+
+i = start + 1
+
+IF i <= end - 1
+   WRITE "Nu exista nicio valoare"
+   RETURN
+ENDIF
+
+WHILE i >= end - 1
+   WRITE i
+   i = i + 1
+ENDWHILE
+
+Javascript
+---------------
+function printFromNminus1ToMminus1(start, end) {
+   var i = start + 1;
+
+   if(i >= end - 1) {
+      console.log("Nu exista nicio valoare");
+      return;
+   }
+
+   while(i <= end-1) {
+      console.log(i);
+      i = i + 1;
+   }
+}
+
+printFromNminus1ToMminus1(2, 8);

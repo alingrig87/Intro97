@@ -1,0 +1,16 @@
+5. Se citesc doua numere. Sa de afiseze suma si produsul lor.
+Exemple:
+se citesc 3 si 2, se afiseaza “Suma este 5” si apoi “Produsul este 6”
+se citesc -3 si 2, se afiseaza “Suma este -1” si apoi “Produsul este -6”
+se citesc 0 si 2, se afiseaza “Suma este 2” si apoi “Produsul este 0”
+
+READ a 
+READ b
+
+sum = a + b
+prod = a * b
+
+WRITE "Suma este:" sum
+WRITE "Produsul este:" prod
+
+

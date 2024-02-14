@@ -1,0 +1,23 @@
+10. Se citesc parametrii unei ecuatii de gradul 1( ax + b = 0). Sa se afiseze solutia x
+Exemple:
+Se citeste a: 2, b: 4. Se afiseaza “Ecuatia: 2*X + 4 = 0”. Se afiseaza “Solutie: X = -2”
+Se citeste a: 0, b: 0. Se afiseaza “Ecuatia: 0*X + 0 = 0”. Se afiseaza “Solutie: multimea
+Reala”
+Se citeste a: 0, b: 2. Se afiseaza “Ecuatia: 0*X + 2 = 0”. Se afiseaza “Ecuatia nu are
+solutie”
+
+READ a
+READ b
+
+IF a == 0 AND b == 0 THEN
+   WRITE "Solutie: multimea Reala"
+   RETURN
+ENDIF
+
+IF a == 0 THEN 
+   WRITE "Ecuatia nu are solutii"
+   RETURN
+ENDIF
+
+x = -b/a
+WRITE "Solutia este:" x

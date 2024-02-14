@@ -1,0 +1,16 @@
+3. Se citeste un un numar intreg. Sa se afiseze daca este pozitiv, negativ sau nul.
+Exemple:
+se citeste 3, se afiseaza “S-a introdus o valoare pozitiva”
+se citeste -4, se afiseaza “S-a introdus o valoare negativa”
+se citeste 0, se afiseaza “S-a introdus o valoare nula”
+
+READ n
+IF n > 0 THEN
+   WRITE "Numarul este pozitiv"
+ELSE
+   IF n < 0 THEN
+      WRITE "Numarul este negativ"
+   ELSE 
+      WRITE "Numarul este nul"
+   ENDIF
+ENDIF

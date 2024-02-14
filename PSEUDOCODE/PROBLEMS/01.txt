@@ -1,0 +1,8 @@
+1. Se citeste un numar intreg. Sa se afiseze urmatorul numar.
+Exemple:
+se citeste 3, se afiseaza 4
+se citeste -4, se afiseaza -3
+
+READ n
+next = n + 1
+WRITE next

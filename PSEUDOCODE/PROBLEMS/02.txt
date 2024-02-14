@@ -1,0 +1,9 @@
+2. Se citeste un un numar intreg. Sa se afiseze opusul lui.
+Exemple:
+se citeste 3, se afiseaza -3
+se citeste -4, se afiseaza 4
+se citeste 0, se afiseaza 0
+
+READ n
+opus = 0 - n
+WRITE opus
