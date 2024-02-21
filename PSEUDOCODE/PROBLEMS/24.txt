@@ -1,0 +1,14 @@
+24. Se citeste un sir de numere intregi. Sa se afiseze minimul.
+Exemplu:
+Se citesc 4, 5, 3, 0, -3, 1. Se afiseaza: -3
+
+READ arr
+min = arr[0]
+i = 1
+
+WHILE(i <= arr.length - 1)
+   IF(arr[i] < min)
+      min = arr[i]
+   ENDIF
+   i = i + 1
+ENDWHILE

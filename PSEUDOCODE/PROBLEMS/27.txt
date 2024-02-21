@@ -1,0 +1,28 @@
+27. Se citeste un numar intreg strict pozitiv n. Sa se genereze sirul lui Fibonacci cu n
+elemente.
+Exemple:
+i. Se citeste 9. Se afiseaza: 0, 1, 1, 2, 3, 5, 8, 13, 21
+ii. Se citeste 1. Se afiseaza: 0
+iii. Se citeste 2. Se afiseaza: 0, 1
+
+READ n
+arr = [0,1]
+i = 2
+WHILE i < n
+   arr[i] = arr[i-2] + arr[i-1]
+   i = i + 1
+ENDWHILE
+
+
+---javascript---
+function fibo(n) {
+  var arr = [0,1];
+  var i = 2;
+  
+  while(i < n) {
+    arr[i] = arr[i-2] + arr[i-1];
+    i = i + 1;
+  }
+}
+
+fibo(10);

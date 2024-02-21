@@ -1,0 +1,30 @@
+30. Se citeste sir de caractere(string). Sa se afiseze de cate ori apare caracterul “a”
+Exemplu:
+Se citeste “Ana are mere”. Se afiseaza: 3
+
+READ str
+i = 0
+count = 0
+
+WHILE(i <= str.length - 1)
+   IF (str[i] == "a")
+      count = count + 1
+   ENDIF
+   i = i + 1
+ENDIF
+
+---javascript----
+function countLetter(str, letter) {
+   var i = 0;
+   var count = 0;
+
+   while(i <= str.length - 1) {
+      if (str[i] == letter) {
+         count = count + 1;
+      }
+      i = i + 1;
+   }
+} 
+
+countLetter("Ana are mere", "a");
+countLetter("Ana are nuci", "z");
