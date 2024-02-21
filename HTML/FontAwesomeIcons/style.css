@@ -1,0 +1,43 @@
+.fa-brands {
+	font-size: 100px;
+	margin: 20px;
+}
+
+.fa-facebook,
+.fa-square-facebook {
+	color: #316ff6;
+}
+
+.fa-instagram {
+	color: mediumvioletred;
+}
+
+.fa-square-instagram {
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.fa-youtube,
+.fa-square-youtube {
+	color: red;
+}
+
+.fa-whatsapp,
+.fa-square-whatsapp {
+	color: #25d366;
+}
+.fa-waze {
+	color: #259bbf;
+}
+.fa-uber {
+	color: black;
+}
