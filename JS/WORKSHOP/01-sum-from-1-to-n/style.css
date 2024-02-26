@@ -1,0 +1,18 @@
+#first-number,
+#second-number {
+	margin-bottom: 10px;
+}
+
+#first-number-container,
+#second-number-container,
+#buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+}
+
+#container {
+	border: 2px solid orange;
+	width: 350px;
+	padding: 10px;
+}
